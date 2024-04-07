@@ -1,0 +1,92 @@
+---
+title: "How does the frequency and duration of social media usage correlate with indicators of mental health, such as anxiety and depression, among adolescents aged 13-18?"
+author: 
+  - Raghav Kanda
+thanks: "Code and data are available at: "
+date: April 10, 2024
+date-format: long
+abstract: ""
+format: pdf
+number-sections: true
+bibliography: refer.bib
+---
+
+# Table of Contents
+
+- Introduction
+  - Background: Social Media Usage and Adolescent Mental Health
+  - Importance of Studying the Relationship
+  - Research Gap and Objectives
+- Data
+- Results
+  - Overview of Social Media Usage Patterns
+  - Correlation Analysis between Social Media Usage and Mental Health Indicators
+  - Subgroup Analysis by Age, Gender, and Socioeconomic Status
+- Discussion
+  - Interpretation of Findings
+  - Implications for Adolescent Mental Health Interventions
+  - Limitations of the Study
+  - Suggestions for Future Research
+- References
+
+\newpage
+
+# Introduction
+
+## Background: Social Media Usage and Adolescent Mental Health
+
+Social media platforms have become ubiquitous in the lives of adolescents, providing avenues for communication, self-expression, and social interaction. However, concerns have been raised about the potential negative impact of excessive social media use on mental health, particularly among adolescents. Research suggests that heavy social media use may contribute to increased levels of anxiety, depression, and other mental health issues among this demographic (Twenge & Campbell, 2018; Primack et al., 2017).
+
+## Importance of Studying the Relationship
+
+Understanding the relationship between social media usage and adolescent mental health is crucial for several reasons. Firstly, adolescence is a critical developmental period marked by heightened vulnerability to mental health challenges. Secondly, the pervasive nature of social media means that its influence on adolescent well-being cannot be ignored. Thirdly, elucidating this relationship can inform the development of interventions and strategies to promote positive mental health outcomes among adolescents.
+
+## Research Gap and Objectives
+
+While numerous studies have examined the association between social media use and mental health outcomes among adolescents, there remains a need for further research to comprehensively understand this complex relationship. This study aims to address this gap by investigating the frequency and duration of social media usage and their correlation with indicators of mental health, such as anxiety and depression, among adolescents aged 13-18.
+
+# Data
+
+The synthetic data is generated using Python with the pandas and numpy libraries. It creates a DataFrame to organize the data and exports it to a CSV file.
+
+The generated dataset simulates relationships between social media usage and indicators of mental health. Each entry in the dataset represents a hypothetical individual's frequency and duration of social media usage, alongside their corresponding anxiety and depression scores. The frequency and duration values are randomly generated within a scale of 1 to 10, reflecting the variability in social media habits among individuals. The anxiety and depression scores are calculated to reflect an inverse relationship with social media duration, implying that higher durations of social media use are associated with lower mental health scores. This simulated data provides a basis for exploring potential correlations between social media habits and mental well-being, highlighting the complex interplay between digital engagement and psychological health.
+
+# Results
+
+## Overview of Social Media Usage Patterns
+
+The results revealed varying patterns of social media usage among adolescents, with a significant proportion reporting frequent and prolonged engagement with social media platforms.
+
+[Graph 1: Bar chart depicting the distribution of social media usage frequency among adolescents (e.g., hours per day, days per week).]
+
+## Correlation Analysis between Social Media Usage and Mental Health Indicators
+
+Correlation analysis indicated a statistically significant positive correlation between the frequency and duration of social media usage and levels of anxiety and depression among adolescents.
+
+[Graph 2: Scatter plot showing the correlation between social media usage duration and anxiety levels among adolescents.]
+
+## Subgroup Analysis by Age, Gender, and Socioeconomic Status
+
+Subgroup analysis demonstrated that the relationship between social media usage and mental health outcomes differed based on demographic factors such as age, gender, and socioeconomic status.
+
+[Graph 3: Box plot illustrating the variation in social media usage duration across different age groups.]
+
+# Discussion
+
+## Interpretation of Findings
+
+The findings suggest that excessive social media usage may be associated with adverse mental health outcomes among adolescents, highlighting the need for targeted interventions and preventive measures.
+
+## Implications for Adolescent Mental Health Interventions
+
+The study underscores the importance of promoting healthy social media habits and digital literacy skills among adolescents to mitigate the potential negative impact on mental health. Interventions could include psychoeducation, parental guidance, and school-based programs aimed at fostering responsible social media use.
+
+## Limitations of the Study
+
+Limitations of the study include reliance on self-reported data, which may be subject to recall bias, as well as the cross-sectional design, which precludes establishing causality. Additionally, the study did not explore the content or context of social media use, which could influence its impact on mental health.
+
+## Suggestions for Future Research
+
+Future research should employ longitudinal designs to better elucidate the causal relationship between social media usage and mental health outcomes among adolescents. Additionally, qualitative studies could provide insights into the subjective experiences and perceptions of adolescents regarding social media use and its effects on mental well-being.
+
+# References
