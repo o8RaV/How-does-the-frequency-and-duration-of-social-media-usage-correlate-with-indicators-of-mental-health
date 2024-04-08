@@ -35,6 +35,8 @@ data <- df %>% sample_n(100)
   - Research Gap and Objectives
 
 - Data
+  - Methodology
+  - Data Summary
 
 - Results
   - Overview of Social Media Usage Patterns
@@ -46,6 +48,7 @@ data <- df %>% sample_n(100)
   - Implications for Adolescent Mental Health Interventions
   - Limitations of the Study
   - Suggestions for Future Research
+  - Conclusion
 
 - References
 
@@ -55,25 +58,33 @@ data <- df %>% sample_n(100)
 
 ## Background: Social Media Usage and Adolescent Mental Health
 
-Social media platforms have become an integral part of adolescents' lives, offering channels for communication, self-expression, and social interaction. However, concerns regarding the potential adverse effects of excessive social media use on mental health, particularly among adolescents, have garnered increasing attention. Research, including studies like that by Twenge [@Twenge2018], suggests a link between heavy social media use and heightened levels of anxiety, depression, and other mental health issues among this demographic.
+Social media now plays a very important role in people's lives. It provides a forum for social contact, communication, and self-expression. We have seen that there's been a growing research on the possible negative impact of excessive social media use on mental health, especially among teenagers. Studies, such as the one conducted by Twenge [@Twenge2018], suggest a connection between high levels of social media use and a rise in mental health problems such as anxiety and depression in this group of people.
 
 ## Importance of Studying the Relationship
 
-Understanding the intricate relationship between social media usage and adolescent mental health is paramount for several reasons. Firstly, adolescence constitutes a critical developmental period characterized by heightened vulnerability to mental health challenges, as highlighted by Sawyer et al. [@Sawyer2018]. Secondly, the pervasive nature of social media necessitates acknowledgment of its profound influence on adolescent well-being. Thirdly, unraveling this relationship holds promise for informing the development of interventions and strategies aimed at fostering positive mental health outcomes among adolescents, as underscored by Best et al. [@Best2014].
+It is critical to understand the complex relationship that exists between teenage mental health and social media use for a alot of reasons.The following are a few important ones:
+
+  - First off, as Sawyer et al. [@Sawyer2018] point out, adolescence is a crucial developmental stage marked by increased susceptibility to  mental health issues.
+  - Secondly, social media's widespread use indicates that it has a significant impact on adolescent wellbeing.
+  - Third, as highlighted by Best et al. [@Best2014], dissecting this link has the potential to inform the creation of therapies and tactics meant to promote favorable mental health outcomes for teenagers.
 
 ## Research Gap and Objectives
 
-Although numerous studies have explored the association between social media use and mental health outcomes among adolescents, a significant research gap persists, demanding further investigation to comprehensively understand this multifaceted relationship. This study endeavors to bridge this gap by delving into the frequency and duration of social media usage and their correlation with indicators of mental health, such as anxiety and depression, among adolescents aged 13-19. Through a nuanced exploration, this research seeks to contribute to the existing body of knowledge and offer insights that can inform targeted interventions and support mechanisms tailored to the unique needs of adolescents in the digital age.
+Although numerous studies have explored the association between social media use and mental health outcomes among adolescents, a significant research gap persists, demanding further investigation to comprehensively understand this multifaceted relationship. By investigating the frequency and duration of social media usage among teenagers aged 13-19 and their link with mental health indicators including depression and anxiety, this study aims to close this gap. By means of a sophisticated investigation, this study aims to make a valuable contribution to the current corpus of information and provide discernments that can guide focused interventions and methods of support catered to the particular requirements of teenagers in the digital era.
 
 \newpage
 
 # Data
+
+## Methodology
 
 The synthetic dataset was generated using Python 3.9.7 [@Python2022], leveraging the pandas (version 1.3.3)[@pandas2022] and numpy (version 1.21.2)[@Harris2020] libraries. A DataFrame structure from the pandas library was utilized to organize the data, which was then exported to a CSV file using pandas' `to_csv()` function. 
 
 This dataset simulates the relationships between social media usage and indicators of mental health. Each entry represents a hypothetical individual's frequency and duration of social media usage, along with corresponding anxiety and depression scores. The frequency and duration values are randomly generated within a scale of 1 to 10, capturing the diversity in social media habits among individuals. Anxiety and depression scores are calculated to exhibit an inverse relationship with social media duration, suggesting that longer durations of social media use are associated with lower mental health scores.
 
 To visualize and explore potential correlations between social media habits and mental well-being, R 4.1.2 [@Rmanual] was employed. Specifically, ggplot2 (version 3.3.5)[@Wickham2016], a popular package in R for creating visualizations, was utilized to generate graphs and analyze the data further. This integration of Python for data generation and R for visualization provides a comprehensive approach to exploring the complex interplay between digital engagement and psychological health.
+
+## Data Summary
 
 We can see the summary of the data below:
 
@@ -153,19 +164,27 @@ Furthermore, Figure 2, a scatter plot, demonstrates the correlation between soci
 
 Additionally, Figure 3, a box plot, illustrates the variation in social media usage duration across different age groups. By visually comparing the distribution of usage duration among various age cohorts, this visualization aids in identifying any age-related patterns or trends in social media consumption habits.
 
-Consequently, the study emphasizes the critical importance of promoting healthy social media habits and fostering digital literacy skills among adolescents to mitigate potential negative impacts on mental health. Interventions such as psychoeducation, parental guidance, and school-based programs aimed at encouraging responsible social media use are strongly advocated. These interventions can be tailored to address specific age groups and usage patterns revealed by the presented figures, thus enhancing their effectiveness in safeguarding adolescent mental well-being in the digital age.
+Consequently, the study emphasizes the critical importance of promoting healthy social media habits and fostering digital literacy skills among adolescents to mitigate potential negative impacts on mental health. Interventions such as psychological education, parental guidance, and school-based programs aimed at encouraging responsible social media use are strongly advocated. These interventions can be tailored to address specific age groups and usage patterns revealed by the presented figures, thus enhancing their effectiveness in safeguarding adolescent mental well-being in the digital age.
 
 ## Limitations of the Study
 
-The study is subject to several limitations, primarily stemming from its reliance on self-reported data and the cross-sectional design. Self-reported data introduces the potential for recall bias, as participants may inaccurately remember or misrepresent their social media usage habits or mental health status. This bias could skew the results, leading to an inaccurate portrayal of the association between social media usage and mental health outcomes. Furthermore, the cross-sectional design inhibits the establishment of causality, as it only captures a snapshot in time. Without longitudinal data, it's challenging to discern whether excessive social media use directly causes adverse mental health effects or if other factors contribute to this relationship.
+The study is subject to several limitations, primarily stemming from its reliance on self-reported data and the cross-sectional design. Self-reported data introduces the potential for recall bias, as participants may inaccurately remember or misrepresent their social media usage habits or mental health status. This bias may distort the findings and provide a false impression of the relationship between social media use and outcomes related to mental health. Moreover, because the cross-sectional design only records a single point in time, it makes it difficult to demonstrate causality. Without longitudinal data, it's challenging to discern whether excessive social media use directly causes adverse mental health effects or if other factors contribute to this relationship.
 
-Moreover, the study's scope was limited by its failure to delve into the content or context of social media use. The nature of interactions, the types of content consumed or shared, and the social dynamics within online platforms can significantly influence the impact of social media on mental health. For example, exposure to cyberbullying, comparison with idealized representations, or excessive screen time before bedtime may exacerbate mental health issues. By overlooking these nuances, the study may not capture the full complexity of how social media affects adolescents' well-being. Addressing these limitations in future research could provide a more nuanced understanding of the relationship between social media usage and mental health outcomes among adolescents.
+Moreover, the study's scope was limited by its failure to delve into the content or context of social media use. The nature of interactions, the types of content consumed or shared, and the social dynamics within online platforms can significantly influence the impact of social media on mental health. For example, exposure to cyberbullying, comparison with idealized representations, or excessive screen time before bedtime may exacerbate mental health issues. The study might not fully understand the intricacy of how social media influences the wellbeing of adolescents if these subtleties are ignored. Future studies that address these constraints may yield a more detailed picture of the connection between teenage social media use and mental health outcomes.
 
 ## Suggestions for Future Research
 
 Future research endeavors should focus on exploring the intricate interplay between social media usage and adolescents' gender and social status, discerning how these factors shape mental health outcomes. By dissecting these dynamics, researchers can uncover whether certain gender groups or social strata are more vulnerable to negative mental health effects from particular types of social media interactions or content consumption. This understanding can inform the development of tailored interventions and support systems, addressing the diverse needs of adolescents based on their unique identities and social contexts.
 
-Additionally, integrating real-time data collection methods, such as online forums and social media monitoring tools, can offer deeper insights into the complex relationship between social media use and mental well-being. These approaches provide a more authentic portrayal of adolescents' online behaviors and experiences, enabling researchers to track changes over time and understand the evolving impact of social media on mental health. Leveraging such methodologies can enhance our comprehension of the mechanisms underlying social media's influence on adolescents' well-being, facilitating the design of more effective interventions and policies to promote positive online experiences.
+Additionally, integrating real-time data collection methods, such as online forums and social media monitoring tools, can offer deeper insights into the complex relationship between social media use and mental well-being. These approaches provide a more authentic portrayal of adolescents' online behaviors and experiences, enabling researchers to track changes over time and understand the evolving impact of social media on mental health. By utilizing these approaches, we may improve our understanding of the mechanisms that underlie the impact of social media on the wellbeing of adolescents. This will make it easier to create policies and interventions that will encourage pleasant experiences on the internet.
+
+## Conclusion
+
+The study's conclusions highlight the urgent need for preventative actions to address the negative effects of excessive social media use on teenage mental health. We have learned a great deal about the relationship between teenage use of social media and poor mental health outcomes thanks to the perceptive data analysis and trend display.
+
+The study emphasizes the value of encouraging digital literacy and positive social media behaviors, but it also recognizes some of its shortcomings, mainly with regard to the cross-sectional design and dependence on self-reported data. These restrictions make it necessary to interpret the results with caution and highlight the significance of further studies that aim to explore the intricacies of the connection between social media use and mental health.
+
+In the future, it will be crucial to create focused interventions and support networks that cater to the various requirements of teenagers according to their gender, socioeconomic standing, and online habits. We can build a deeper understanding of this complicated phenomenon and provide teenagers the tools they need to navigate the digital ecosystem in a healthier and more resilient way by embracing cutting-edge research approaches and examining the intricate interactions between social media use and mental health. In the end, we can try to create a more secure and encouraging online environment for the welfare of future generations by cooperating across disciplines and industries.
 
 \newpage
 
