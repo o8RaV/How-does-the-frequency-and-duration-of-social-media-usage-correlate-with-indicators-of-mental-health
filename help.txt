@@ -1,0 +1,43 @@
+---
+
+# Reproduction Guide: Teen Social Media Usage and Mental Health Analysis
+
+## Introduction
+This guide provides step-by-step instructions for reproducing the results of the analysis on teen social media usage and mental health. The analysis includes data generation, data import, summary statistics, and visualization using R and Python.
+
+## Step 1: Data Generation (Python)
+1. Open `dataset.py` in a Python environment.
+2. Execute the script to generate synthetic data for the analysis.
+3. The script will create a CSV file named `social_media_mental_health.csv` in the `dataverse_files` directory.
+
+## Step 2: Data Import and Analysis (R)
+1. Open `data.r` in an R environment.
+2. Make sure the required libraries (`ggplot2`, `dplyr`, `tidyr`) are installed.
+3. Execute the script to import the generated CSV file and perform analysis.
+4. The script will sample 100 rows from the dataset for analysis.
+5. Summary statistics and visualizations will be generated, including:
+   - Distribution of social media usage frequency among adolescents (Bar chart)
+   - Correlation between social media usage duration and anxiety levels (Scatter plot)
+   - Variation in social media usage duration across age groups (Box plot)
+6. The generated graphs will be displayed in the R environment.
+
+## Running the Paper
+
+To run the paper.qmd file and generate the final report, follow these steps:
+
+1. Open the paper.qmd file in a Markdown editor or a compatible text editor.
+2. Make sure you have the necessary software installed, including R, Python, and the required libraries mentioned in the paper.qmd file.
+3. Ensure that the dataset file (social_media_mental_health.csv) is in the correct directory as specified in the paper.qmd file.
+4. Run the paper.qmd file using a Markdown compiler or rendering tool to generate the final report in PDF format.
+
+Once the steps above are completed, the final report will be generated, providing detailed insights into the analysis of teen social media usage and mental health indicators.
+
+## Additional Notes
+- Ensure Python and R environments are properly set up with required libraries installed.
+- Adjust parameters in the Python script (`dataset.py`) if necessary, such as sample size or data generation logic.
+- Feel free to customize the R script (`data.r`) for additional analysis or visualization.
+
+## Contact Information
+For any questions or assistance, please contact Raghav Kanda at raghavkanda8@gmail.com.
+
+---
