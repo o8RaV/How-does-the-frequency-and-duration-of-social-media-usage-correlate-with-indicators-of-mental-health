@@ -22,6 +22,7 @@ library(tidyr)
 
 # Import the dataset from a CSV file
 df <- read.csv("C:/Users/ragha/Desktop/How does the frequency and duration of social media usage correlate with indicators of mental health, such as anxiety and depression, among adolescents aged 13-18/dataverse_files/social_media_mental_health.csv")
+# Change th efile location to wherever your file is located.
 
 set.seed(123)  # Set seed for reproducibility
 data <- df %>% sample_n(100)
@@ -45,14 +46,12 @@ data <- df %>% sample_n(100)
 
 - Discussion
   - Interpretation of Findings
-  - Implications for Adolescent Mental Health Interventions
+  - What can be done?
   - Limitations of the Study
   - Suggestions for Future Research
   - Conclusion
 
 - References
-
-\newpage
 
 # Introduction
 
@@ -64,15 +63,15 @@ Social media now plays a very important role in people's lives. It provides a fo
 
 It is critical to understand the complex relationship that exists between teenage mental health and social media use for a alot of reasons.The following are a few important ones:
 
-  - First off, as Sawyer et al. [@Sawyer2018] point out, adolescence is a crucial developmental stage marked by increased susceptibility to  mental health issues.
-  - Secondly, social media's widespread use indicates that it has a significant impact on adolescent wellbeing.
-  - Third, as highlighted by Best et al. [@Best2014], dissecting this link has the potential to inform the creation of therapies and tactics meant to promote favorable mental health outcomes for teenagers.
+  - As Sawyer et al. [@Sawyer2018] points out, adolescence is a crucial developmental stage marked by increased susceptibility to  mental health issues.
+  - Impact on self-esteem: Social media platforms often present curated, idealized versions of people's lives, which can lead to feelings of inadequacy or low self-esteem among teenagers who compare themselves to these unrealistic standards.
+  - As highlighted by Best et al. [@Best2014], dissecting this link has the potential to inform the creation of therapies and tactics meant to promote favorable mental health outcomes for teenagers.
+  - Sleep disturbances: Excessive use of social media, particularly before bedtime, can disrupt teenagers' sleep patterns, leading to fatigue, irritability, and difficulty concentrating, which can negatively impact their mental health and overall well-being.
+  - Comparison culture: Social media fosters a culture of comparison, where teenagers constantly compare their lives, appearance, and achievements to those of their peers, often leading to feelings of inadequacy, envy, and depression.
 
 ## Research Gap and Objectives
 
 Although numerous studies have explored the association between social media use and mental health outcomes among adolescents, a significant research gap persists, demanding further investigation to comprehensively understand this multifaceted relationship. By investigating the frequency and duration of social media usage among teenagers aged 13-19 and their link with mental health indicators including depression and anxiety, this study aims to close this gap. By means of a sophisticated investigation, this study aims to make a valuable contribution to the current corpus of information and provide discernments that can guide focused interventions and methods of support catered to the particular requirements of teenagers in the digital era.
-
-\newpage
 
 # Data
 
@@ -93,8 +92,6 @@ We can see the summary of the data below:
 #| fig-cap: Estimated Coefficients
 summary(data)
 ```
-
-\newpage 
 
 # Results
 
@@ -150,8 +147,6 @@ graph3 <- ggplot(data, aes(x = factor(Age), y = Social_Media_Duration)) +
 print(graph3)
 ```
 
-\newpage
-
 # Discussion
 
 ## Interpretation of Findings
@@ -165,6 +160,24 @@ Furthermore, Figure 2, a scatter plot, demonstrates the correlation between soci
 Additionally, Figure 3, a box plot, illustrates the variation in social media usage duration across different age groups. By visually comparing the distribution of usage duration among various age cohorts, this visualization aids in identifying any age-related patterns or trends in social media consumption habits.
 
 Consequently, the study emphasizes the critical importance of promoting healthy social media habits and fostering digital literacy skills among adolescents to mitigate potential negative impacts on mental health. Interventions such as psychological education, parental guidance, and school-based programs aimed at encouraging responsible social media use are strongly advocated. These interventions can be tailored to address specific age groups and usage patterns revealed by the presented figures, thus enhancing their effectiveness in safeguarding adolescent mental well-being in the digital age.
+
+## What can be done?
+
+Based on the analysis and findings found, several targeted interventions and preventive measures can be implemented to address the adverse effects of excessive social media usage on adolescent mental health:
+
+  - Psychological Education: Develop educational programs aimed at increasing adolescents' awareness of the potential risks associated with excessive social media use, such as cyberbullying, negative self-comparison, and sleep disturbances. Provide resources and strategies for coping with these challenges effectively.
+
+  - Parental Guidance: Offer guidance and support to parents on how to monitor and regulate their children's social media usage effectively. Encourage open communication between parents and adolescents about social media habits and their impact on mental health.
+
+  - School-Based Programs: Implement school-based interventions focused on promoting responsible social media use and digital literacy skills. Incorporate topics such as online etiquette, critical thinking, and media literacy into the curriculum to empower adolescents to navigate the digital landscape safely.
+
+  - Promotion of Offline Activities: Encourage adolescents to participate in offline activities and hobbies that promote social interaction, physical exercise, and mental well-being as alternatives to excessive social media use. Provide opportunities for offline socialization and engagement within communities.
+
+  - Regulation and Policy Development: Advocate for policies and regulations that promote responsible social media practices and protect adolescents from harmful content and online harassment. Collaborate with social media platforms, policymakers, and stakeholders to establish guidelines for age-appropriate usage and content moderation.
+
+  - Research and Monitoring: Continuously monitor trends in social media usage and its impact on adolescent mental health through ongoing research and data collection. Use findings to inform the development of targeted interventions and policy recommendations that address emerging challenges in the digital landscape.
+
+By implementing these interventions in a comprehensive and collaborative manner, stakeholders can work together to promote healthy social media habits and safeguard the mental well-being of adolescents in the digital age.
 
 ## Limitations of the Study
 
