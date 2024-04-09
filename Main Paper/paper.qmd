@@ -2,13 +2,14 @@
 title: "How does the frequency and duration of social media usage correlate with indicators of mental health, such as anxiety and depression, among adolescents aged 13-19?"
 author: 
   - Raghav Kanda
-thanks: "Code and data are available at: "
+thanks: "Code and data are available at: https://github.com/o8RaV/How-does-the-frequency-and-duration-of-social-media-usage-correlate-with-indicators-of-mental-health"
 date: April 10, 2024
 date-format: long
 abstract: ""
 format: pdf
 number-sections: true
 bibliography: refer.bib
+footer: "Code and data are available at: https://github.com/o8RaV/How-does-the-frequency-and-duration-of-social-media-usage-correlate-with-indicators-of-mental-health"
 ---
 
 ```{R}
