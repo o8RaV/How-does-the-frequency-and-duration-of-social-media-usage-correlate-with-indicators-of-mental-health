@@ -8,7 +8,7 @@ This guide provides step-by-step instructions for reproducing the results of the
 ## Step 1: Data Generation (Linear Regression)
 1. Open `model.r` in a R environment.
 2. Execute the script to generate synthetic data for the analysis.
-3. The script will create a CSV file named `social_media_mental_health.csv` in the `dataverse_files` directory.
+3. The script will create a CSV file named `social_media_mental_health.csv` in the `input/data` directory.
 
 ## Step 2: Data Import and Analysis (R)
 1. Open `data.r` in an R environment.
@@ -34,7 +34,7 @@ Once the steps above are completed, the final report will be generated, providin
 
 ## Additional Notes
 - Ensure Python and R environments are properly set up with required libraries installed.
-- Adjust parameters in the Python script (`dataset.py`) if necessary, such as sample size or data generation logic.
+- Adjust parameters in the R script (`model.r`) if necessary, such as sample size or data generation logic.
 - Feel free to customize the R script (`data.r`) for additional analysis or visualization.
 
 ## Contact Information
