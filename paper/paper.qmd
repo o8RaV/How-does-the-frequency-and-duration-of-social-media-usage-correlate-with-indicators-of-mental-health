@@ -2,14 +2,13 @@
 title: "How does the frequency and duration of social media usage correlate with indicators of mental health, such as anxiety and depression, among adolescents aged 13-19?"
 author: 
   - Raghav Kanda
-thanks: "Code and data are available at: https://github.com/o8RaV/How-does-the-frequency-and-duration-of-social-media-usage-correlate-with-indicators-of-mental-health"
-date: April 10, 2024
+thanks: "[Code and Data available Here](https://github.com/o8RaV/How-does-the-frequency-and-duration-of-social-media-usage-correlate-with-indicators-of-mental-health)"
+date: 10 April 2024
 date-format: long
 abstract: "This paper investigates the correlation between the frequency and duration of social media usage and indicators of mental health, such as anxiety and depression, among adolescents aged 13-19. Drawing upon a synthetic dataset and employing a sophisticated analytical approach, the study explores the relationship between social media habits and mental well-being. Findings reveal significant positive correlations between heightened social media engagement and increased levels of anxiety and depression among adolescents. Moreover, subgroup analysis highlights age-related variations in social media usage patterns and their association with mental health outcomes. The study underscores the critical importance of promoting healthy social media behaviors and fostering digital literacy skills among adolescents to mitigate potential negative impacts on mental health. Additionally, it identifies key areas for future research and intervention, emphasizing the need for tailored approaches that address the diverse needs of teenagers in the digital age."
 format: pdf
 number-sections: true
 bibliography: refer.bib
-footer: "Code and data are available at: https://github.com/o8RaV/How-does-the-frequency-and-duration-of-social-media-usage-correlate-with-indicators-of-mental-health"
 ---
 
 ```{R}
@@ -22,7 +21,7 @@ library(dplyr)
 library(tidyr)
 
 # Import the dataset from a CSV file
-df <- read.csv("C:/Users/ragha/Desktop/How does the frequency and duration of social media usage correlate with indicators of mental health, such as anxiety and depression, among adolescents aged 13-18/dataverse_files/social_media_mental_health.csv")
+df <- read.csv("C:/Users/ragha/Desktop/How does the frequency and duration of social media usage correlate with indicators of mental health, such as anxiety and depression, among adolescents aged 13-18/data/social_media_mental_health.csv")
 # Change the file location to wherever your file is located.
 
 set.seed(123)  # Set seed for reproducibility

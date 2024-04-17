@@ -4,7 +4,7 @@ library(dplyr)
 library(tidyr)
 
 # Import the dataset from a CSV file
-df <- read.csv("dataverse_files/social_media_mental_health.csv")
+df <- read.csv("data/social_media_mental_health.csv")
 
 set.seed(123)  # Set seed for reproducibility
 data <- df %>% sample_n(100)
@@ -38,6 +38,6 @@ graph3 <- ggplot(data, aes(x = factor(Age), y = Social_Media_Duration)) +
   theme_minimal()
 
 # Display the graphs
-# print(graph1)
+print(graph1)
 print(graph2)
-# print(graph3)
+print(graph3)

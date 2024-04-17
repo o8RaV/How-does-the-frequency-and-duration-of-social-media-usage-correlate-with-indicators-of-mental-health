@@ -1,10 +1,10 @@
-# Social Media Usage and Adolescent Mental Health
+# Social Media Usage's relationship with Adolescent Mental Health
 
 ## Operating Environment:
 - Operating System: Windows 11 Home
 - Device: ASUS TUF Dash F15
 - Processor: 12th Gen Intel(R) Core(TM) i5-12450H   2.00 GHz
-- Memory: 16.0 GB (15.6 GB usable) DDR4
+- Memory: 16.0 GB (15.6 GB usable) DDR5
 - Software: R version 4.0.2
 
 ## Overview
