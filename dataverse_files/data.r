@@ -38,6 +38,6 @@ graph3 <- ggplot(data, aes(x = factor(Age), y = Social_Media_Duration)) +
   theme_minimal()
 
 # Display the graphs
-print(graph1)
+# print(graph1)
 print(graph2)
-print(graph3)
+# print(graph3)

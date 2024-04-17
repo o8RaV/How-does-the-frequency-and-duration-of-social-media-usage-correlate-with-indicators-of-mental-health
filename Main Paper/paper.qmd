@@ -5,7 +5,7 @@ author:
 thanks: "Code and data are available at: https://github.com/o8RaV/How-does-the-frequency-and-duration-of-social-media-usage-correlate-with-indicators-of-mental-health"
 date: April 10, 2024
 date-format: long
-abstract: ""
+abstract: "This paper investigates the correlation between the frequency and duration of social media usage and indicators of mental health, such as anxiety and depression, among adolescents aged 13-19. Drawing upon a synthetic dataset and employing a sophisticated analytical approach, the study explores the relationship between social media habits and mental well-being. Findings reveal significant positive correlations between heightened social media engagement and increased levels of anxiety and depression among adolescents. Moreover, subgroup analysis highlights age-related variations in social media usage patterns and their association with mental health outcomes. The study underscores the critical importance of promoting healthy social media behaviors and fostering digital literacy skills among adolescents to mitigate potential negative impacts on mental health. Additionally, it identifies key areas for future research and intervention, emphasizing the need for tailored approaches that address the diverse needs of teenagers in the digital age."
 format: pdf
 number-sections: true
 bibliography: refer.bib
@@ -23,7 +23,7 @@ library(tidyr)
 
 # Import the dataset from a CSV file
 df <- read.csv("C:/Users/ragha/Desktop/How does the frequency and duration of social media usage correlate with indicators of mental health, such as anxiety and depression, among adolescents aged 13-18/dataverse_files/social_media_mental_health.csv")
-# Change th efile location to wherever your file is located.
+# Change the file location to wherever your file is located.
 
 set.seed(123)  # Set seed for reproducibility
 data <- df %>% sample_n(100)
@@ -37,7 +37,8 @@ data <- df %>% sample_n(100)
   - Research Gap and Objectives
 
 - Data
-  - Methodology
+  - Model
+  - Methodology and Cleaning
   - Data Summary
 
 - Results
@@ -76,13 +77,19 @@ Although numerous studies have explored the association between social media use
 
 # Data
 
-## Methodology
+## Model
 
-The synthetic dataset was generated using Python 3.9.7 [@Python2022], leveraging the pandas (version 1.3.3)[@pandas2022] and numpy (version 1.21.2)[@Harris2020] libraries. A DataFrame structure from the pandas library was utilized to organize the data, which was then exported to a CSV file using pandas' `to_csv()` function. 
+The linear regression model employed in this script seeks to predict anxiety scores in adolescents based on their age, social media usage frequency, and duration of engagement on social media platforms [@Rmanual]. Following the conventional linear regression equation, Anxiety_Score = B0 + B1 * Age + B2 * Social_Media_Frequency + B3 * Social_Media_Duration + E, where B0 represents the intercept and B1, B2, and B3 denote the coefficients associated with each independent variable, while E denotes the error term (Fox & Weisberg, 2019). It is posited that with increasing age and higher levels of social media activity, adolescents may experience elevated anxiety levels, corroborating findings from previous research on the relationship between excessive social media use and mental health issues among young individuals
+
+## Methodology and Cleaning
+
+The synthetic dataset was generated using Linear regression m odel in the model.r file. This R script generates synthetic data to simulate the relationship between social media usage and indicators of mental health among adolescents aged 13-18. It begins by loading the necessary libraries, including `dplyr` for data manipulation. Then, it defines a sample size of 3000 and sets a seed for reproducibility. Random data is generated for the age of the teens, social media usage frequency, and duration, with the frequency and duration increasing as age increases to mimic real-world trends. Anxiety and depression scores are calculated based on the social media usage and duration, assuming higher levels of usage correlate with increased mental health problems. The data is organized into a dataframe and exported to a CSV file. Finally, a linear regression model is fitted to predict anxiety scores using age, social media frequency, and duration as predictors. The summary of the model, including coefficient estimates and significance levels, is printed to assess the relationship between social media usage and anxiety scores. 
+
+We used R [@Rmanual] for data cleaning and processing, utilizing packages like tidyverse [@tidy] for data manipulation. Other packages used includes `ggplot2` [@ggplot], `dplyr` [@dp], `readr` [@read], `tibble` [@tib], `knitr` [@knit], `ggbeeswarm` [@gg], `ggrepel` [@repel], `kableExtra`[@kable], `readxl`[@readxl], `MASS`[@mass], `rstanarm`[@rstan], `modelsummary`[@model].
 
 This dataset simulates the relationships between social media usage and indicators of mental health. Each entry represents a hypothetical individual's frequency and duration of social media usage, along with corresponding anxiety and depression scores. The frequency and duration values are randomly generated within a scale of 1 to 10, capturing the diversity in social media habits among individuals. Anxiety and depression scores are calculated to exhibit an inverse relationship with social media duration, suggesting that longer durations of social media use are associated with lower mental health scores.
 
-To visualize and explore potential correlations between social media habits and mental well-being, R 4.1.2 [@Rmanual] was employed. Specifically, ggplot2 (version 3.3.5)[@Wickham2016], a popular package in R for creating visualizations, was utilized to generate graphs and analyze the data further. This integration of Python for data generation and R for visualization provides a comprehensive approach to exploring the complex interplay between digital engagement and psychological health.
+To visualize and explore potential correlations between social media habits and mental well-being, R 4.1.2 [@Rmanual] was employed. Specifically, ggplot2 (version 3.3.5)[@Wickham2016], a popular package in R for creating visualizations, was utilized to generate graphs and analyze the data further. This integration of linear regression for data generation and R for visualization provides a comprehensive approach to exploring the complex interplay between digital engagement and psychological health.
 
 ## Data Summary
 

@@ -5,8 +5,8 @@
 ## Introduction
 This guide provides step-by-step instructions for reproducing the results of the analysis on teen social media usage and mental health. The analysis includes data generation, data import, summary statistics, and visualization using R and Python.
 
-## Step 1: Data Generation (Python)
-1. Open `dataset.py` in a Python environment.
+## Step 1: Data Generation (Linear Regression)
+1. Open `model.r` in a R environment.
 2. Execute the script to generate synthetic data for the analysis.
 3. The script will create a CSV file named `social_media_mental_health.csv` in the `dataverse_files` directory.
 
@@ -26,7 +26,7 @@ This guide provides step-by-step instructions for reproducing the results of the
 To run the paper.qmd file and generate the final report, follow these steps:
 
 1. Open the paper.qmd file in a Markdown editor or a compatible text editor.
-2. Make sure you have the necessary software installed, including R, Python, and the required libraries mentioned in the paper.qmd file.
+2. Make sure you have the necessary software installed, including R, and the required libraries mentioned in the paper.qmd file.
 3. Ensure that the dataset file (social_media_mental_health.csv) is in the correct directory as specified in the paper.qmd file.
 4. Run the paper.qmd file using a Markdown compiler or rendering tool to generate the final report in PDF format.
 
