@@ -4,7 +4,7 @@ library(dplyr)
 library(tidyr)
 
 # Import the dataset from a CSV file
-df <- read.csv("data/social_media_mental_health.csv")
+df <- read.csv("input/data/social_media_mental_health.csv")
 
 set.seed(123)  # Set seed for reproducibility
 data <- df %>% sample_n(100)

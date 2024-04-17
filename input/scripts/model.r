@@ -30,7 +30,7 @@ data <- data.frame(
 )
 
 # Export the data frame to a CSV file
-write.csv(data, "data/social_media_mental_health.csv", row.names = FALSE)
+write.csv(data, "input/data/social_media_mental_health.csv", row.names = FALSE)
 
 # Display the first few rows of the dataset
 print(head(data))
@@ -40,4 +40,4 @@ model <- lm(Anxiety_Score ~ Age + Social_Media_Frequency + Social_Media_Duration
 
 # Print the summary of the model
 print(summary(model))
-saveRDS(model, "data/linear_regression_model.rds")
+saveRDS(model, "input/data/linear_regression_model.rds")
