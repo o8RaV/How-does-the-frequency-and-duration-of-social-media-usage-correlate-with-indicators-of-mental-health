@@ -12,13 +12,13 @@ age <- sample(13:18, sample_size, replace=TRUE)
 
 # Generate random data for social media usage frequency and duration
 # Increase social media usage as age increases
-social_media_frequency <- sample(age * 0.5:(age * 1.5 + 1), sample_size, replace=TRUE)
+social_media_frequency <- sample(1:(age * 2), sample_size, replace=TRUE)  # Number of times person opens social media
 social_media_duration <- sample(pmax(age * 0.5, 1):(pmin(age * 1.5 + 1, 25)), sample_size, replace=TRUE)  # Ensure max duration is 24 hours
 
 # Generate random data for indicators of mental health (anxiety and depression)
 # Increase mental health problems as social media use increases
-anxiety_scores <- (100 - sample(0:100, sample_size, replace=TRUE)) * social_media_duration / 10
-depression_scores <- (100 - sample(0:100, sample_size, replace=TRUE)) * social_media_duration / 10
+anxiety_scores <- pmin(100, (100 - sample(0:100, sample_size, replace=TRUE)) * social_media_duration / 10)
+depression_scores <- pmin(100, (100 - sample(0:100, sample_size, replace=TRUE)) * social_media_duration / 10)
 
 # Create a data frame to hold the data
 data <- data.frame(

@@ -121,7 +121,7 @@ print(graph1)
 
 ## Correlation Analysis between Social Media Usage and Mental Health Indicators
 
-Correlation analysis revealed a statistically significant positive correlation between the frequency and duration of social media usage and the levels of anxiety and depression among adolescents. Figure 2 depicts the correlation between the duration of social media usage and anxiety levels among adolescents, providing a visual representation of this noteworthy relationship.
+Correlation analysis revealed a statistically significant positive correlation between the frequency and duration of social media usage and the levels of anxiety and depression among adolescents. Figure 2 depicts the correlation between the duration of social media usage and anxiety levels among adolescents, providing a visual representation of this noteworthy relationship. Figure 3 depicts the correlation between the duration of social media usage and depression levels among adolescents, providing a visual representation of this noteworthy relationship. 
 
 ```{R}
 #| echo: false
@@ -137,9 +137,23 @@ graph2 <- ggplot(data, aes(x = Social_Media_Duration, y = Anxiety_Score)) +
 print(graph2)
 ```
 
+```{R}
+#| echo: false
+#| fig-cap: Scatter plot showing the correlation between social media usage duration and depression levels among adolescents
+# Graph 2_1: Scatter plot showing the correlation between social media usage duration and depression levels among adolescents
+graph2_1 <- ggplot(data, aes(x = Social_Media_Duration, y = Depression_Score)) +
+  geom_point(color = "green") +
+  geom_smooth(method = "lm", se = FALSE, color = "black") +
+  labs(title = "Correlation between Social Media Usage Duration and Depression Levels",
+       x = "Social Media Usage Duration per day",
+       y = "Depression Score(out of 100)") +
+  theme_minimal()
+print(graph2_1)
+```
+
 ## Subgroup Analysis by Age
 
-Subgroup analysis showcased that the association between social media usage and mental health outcomes varied depending on demographic factor such as age. Figure 3 visually portrays the divergence in social media usage duration across different age groups, shedding light on the nuanced relationship between social media engagement and age demographics.
+Subgroup analysis showcased that the association between social media usage and mental health outcomes varied depending on demographic factor such as age. Figure 4 visually portrays the divergence in social media usage duration across different age groups, shedding light on the nuanced relationship between social media engagement and age demographics.
 
 ```{R}
 #| echo: false
@@ -162,9 +176,9 @@ Upon analyzing the results and findings, it becomes evident that excessive socia
 
 Figure 1 presents a bar chart depicting the distribution of social media usage frequency among adolescents, showcasing how often they engage with various platforms. This visualization provides a clear picture of the prevalence and intensity of social media use within the studied population.
 
-Furthermore, Figure 2, a scatter plot, demonstrates the correlation between social media usage duration and anxiety levels among adolescents. This graphical representation elucidates the relationship between the two variables, emphasizing the potential impact of prolonged social media exposure on mental well-being.
+Furthermore, Figure 2 and Figure 3, scatter plots, demonstrates the correlation between social media usage duration and anxiety and depression levels among adolescents. This graphical representation elucidates the relationship between the two variables, emphasizing the potential impact of prolonged social media exposure on mental well-being.
 
-Additionally, Figure 3, a box plot, illustrates the variation in social media usage duration across different age groups. By visually comparing the distribution of usage duration among various age cohorts, this visualization aids in identifying any age-related patterns or trends in social media consumption habits.
+Additionally, Figure 4, a box plot, illustrates the variation in social media usage duration across different age groups. By visually comparing the distribution of usage duration among various age cohorts, this visualization aids in identifying any age-related patterns or trends in social media consumption habits.
 
 Consequently, the study emphasizes the critical importance of promoting healthy social media habits and fostering digital literacy skills among adolescents to mitigate potential negative impacts on mental health. Interventions such as psychological education, parental guidance, and school-based programs aimed at encouraging responsible social media use are strongly advocated. These interventions can be tailored to address specific age groups and usage patterns revealed by the presented figures, thus enhancing their effectiveness in safeguarding adolescent mental well-being in the digital age.
 
